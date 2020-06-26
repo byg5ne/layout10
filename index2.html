@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header p {
+            font-size: xx-large;
+        }
+
+        main {
+            margin: 0 auto;
+            width: 960px;
+        }
+        /* float: left; */
+
+        .lo {
+            display: block;
+            position: absolute;
+            top: 300px;
+            left: 600px;
+        }
+
+        .lo p, .lo ul {
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+
+        .lo ul {
+            list-style-type: none;
+            display: block;
+        }
+
+        .lo ul li {
+            float: left;
+            border: 1px solid white;
+            border-bottom: gray;
+        }
+        .lo button {
+            font-size: xx-large;
+            display: block;
+            width: 150px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            border-style: none;
+          
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>onbrella</p>
+    </header>
+   
+
+    <main>
+        <div class="lo">
+            <p>로그인</p>
+            <ul>
+                <li>ID</li>
+                <li>비밀번호</li>
+            </ul>
+            <button>로그인</button>
+            <P>아이디 찾기</P>
+            <P>비밀번호 찾기</P>
+            <P>회원가입</P>
+
+            
+        </div>
+    </main>
+</body>
+</html>

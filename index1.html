@@ -4,8 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: block;
+            position: fixed;
+            border: 1px solid rgba(182, 172, 165, 0.582);
+            background-color: rgb(182, 172, 165);
+            box-shadow: 1px 2px 3px 1px rgba(71, 68, 67, 0.582);
+            width: 100%;
+            height: 50px;
+            z-index: 999;
+        }
+
+        nav ul {
+            text-decoration: none;
+            list-style-type: none;
+            letter-spacing: 2px;
+        }
+
+        nav li {
+            display: block;
+            float: left;
+            padding: 14px;
+            margin-left: 30px;
+        }
+
+        nav li img {
+            position: absolute;
+            top: 0;
+            left: 10px;
+        }
+
+        nav li:hover {
+            color: white;
+        }
+
+        .back {
+            width: 100%;
+            height: 1500px;
+        }
+
+        .cha {
+            position: fixed;
+            right: 0;
+            bottom: 50px;
+            display: block;
+            float: right;
+        }
+
+        .cha p {
+            border: 1px solid width;
+            background-color: white;
+            box-shadow: 1px 2px 3px 1px rgba(182, 172, 165, 0.582);
+            border-radius: 50px 0px 0px 50px;
+            padding-top: 15px;
+            height: 50px;
+            width: 150px;
+            text-align: center;
+        }
+
+        .cha img {
+            margin-top: 10px;
+            padding-left: 30px;
+        }
+
+        /* main */
+
+        .box1 {
+            position: absolute;
+            top: 110px;
+            left: 20%;
+        }
+
+        main h2 {
+            margin: 15px 0px;
+        }
+
+        .box2 {
+            position: absolute;
+            top: 510px;
+            left: 20%;
+        }
+
+        .box3 {
+            position: absolute;
+            top: 910px;
+            left: 20%;
+        }
+
+        .box3-1 input {
+            width: 500px;
+            height: 30px;
+            margin-bottom: 10px;
+            border-style: none;
+            border: 1px solid black;
+        }
+
+        .box문의 input {
+            width: 500px;
+            height: 80px;
+            margin-bottom: 10px;
+            border-style: none;
+            border: 1px solid black;
+            overflow: scroll;
+            text-align: start;
+        }
+
+        .box3 button {
+            margin-bottom: 10px;
+            width: 500px;
+            height: 30px;
+            color: white;
+            background-color: black;
+            border-style: none;
+        }
+
+        .box3 button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .box4 {
+            position: absolute;
+            top: 1610px;
+            left: 20%;
+        }
+
+        .box4 p {
+            margin-bottom: 20px;
+        }
+
+        .box4 img {
+            margin-bottom: 100px;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <head>
+        <nav>
+            <ul>
+                <li><img src="./Untitled-111.png" alt="" width="50PX"></li>
+                <li>Store</li>
+                <li>Design</li>
+                <li >Portfolio</li>
+                <li style="color: white;">Ask</li>
+            </ul>
+        </nav>
+
+        <div class="back">
+            <img src="./umbrella_Stone_web_1024x1440_1-min_2000x.jpg" alt="" width="100%\" height="100%" style="opacity:50%;" >
+        </div>
+
+        <div class="cha">
+            <div>
+                <p> 1:1 채팅 문의하기</p>
+            </div>
+            <div>
+                <img src="./말풍선색깔-2.png" alt="말풍선">
+            </div>           
+        </div>
+    </head>
+
+    <main>
+        <div class="box1">
+            <h3>- Chatting</h3>
+            <h2>평균 1분 내에 응답하는 채팅서비스로</h2>
+            <h2>지금 바로 상담 받아보세요.</h2>
+            <p>화면 우측 하단 채팅창을 클릭하면 상담이 시작됩니다.</p>
+        </div>
+
+        <div class="box2">
+            <h3>- Phone Call</h3>
+            <h2>전문가와의 통화로</h2>
+            <h2>가장 확실하게 궁금증을 해결하세요</h2>
+            <p>Tel. 010-1234-5678</p>
+        </div>
+
+        <div class="box3">
+            <div class="box3-1">
+            <h3>- E-mail</h3>
+            <h2>메일로 가장 정확하게 상담 받아보세요.</h2>
+            <h2>3시간 내로 답변 드립니다.</h2>
+            <p>성명</p>
+            <input type="text" style="background: none;">
+            <p>휴대폰</p>
+            <input type="text" style="background: none;">
+            <p>이메일</p>
+            <input type="text" style="background: none;">
+            <p>문의 내용</p>
+            </div>
+            <div class="box문의">
+                <input type="text" style="background: none;">
+            </div>
+            <button type="submit">메일 전송</button>
+        </div>
+        <div class="box4">
+            <h3>- Meeting</h3>
+            <h2>onbrella 사무실은 양정역 근처에 있습니다.</h2>
+            <p>onbrella의 사무실은 양졍역 2번 출구에 있습니다.</p>
+            <img src="./지도사진.PNG" alt="지도">
+        </div>
+    </main>
 </body>
 </html>
