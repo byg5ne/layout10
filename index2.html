@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+        body, button {font-family: 'GmarketSansBold';}
+        
         * {
             margin: 0;
             padding: 0;
@@ -12,6 +16,8 @@
         }
         header p {
             font-size: xx-large;
+            margin-top: 50px;
+            margin-left: 100px;
         }
 
         main {
@@ -25,6 +31,12 @@
             position: absolute;
             top: 300px;
             left: 600px;
+            width: 300px;
+            margin-left: 70px;
+        }
+
+        .lo p {
+            text-align: center;
         }
 
         .lo p, .lo ul {
@@ -39,19 +51,47 @@
 
         .lo ul li {
             float: left;
-            border: 1px solid white;
-            border-bottom: gray;
+            width: 300px;
+            border: none;
+            /* border: 1px solid gray; */
+            border-bottom: 1px solid gray;
         }
+
+
+        
         .lo button {
+            position: fixed;
+            top: 350px;
+            left: 920px;
+            float: left;
             font-size: xx-large;
             display: block;
-            width: 150px;
-            height: 50px;
+            width: 180px;
+            height: 80px;
             background-color: black;
             color: white;
             border-style: none;
-          
+            margin-left: 70px;
         }
+
+        .lo button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .lo .un {
+            display: block;
+            float: left;
+            width: 600px;
+            margin-top: 5px;
+        }
+
+        .un p {
+            float: left;
+            font-size: 17px;
+        }
+        
+
     </style>
 </head>
 <body>
@@ -63,16 +103,18 @@
     <main>
         <div class="lo">
             <p>로그인</p>
+            <!-- <input type="text" value="ID" style="border: hidden;"><hr>
+            <input type="text" value="비밀번호" style="border: hidden;" ><hr> -->
             <ul>
                 <li>ID</li>
-                <li>비밀번호</li>
+                <li>비밀번호 </li>
             </ul>
-            <button>로그인</button>
-            <P>아이디 찾기</P>
-            <P>비밀번호 찾기</P>
-            <P>회원가입</P>
-
-            
+            <button> 로그인 </button>
+            <div class="un">
+             <P>아이디 찾기　</P>
+             <P>비밀번호 찾기</P>
+             <P>　회원가입</P>
+            </div>
         </div>
     </main>
 </body>
