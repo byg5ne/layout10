@@ -37,6 +37,7 @@
             float: left;
             padding: 14px;
             margin-left: 30px;
+            color: black;
         }
 
         nav li img {
@@ -48,6 +49,8 @@
         nav li:hover {
             color: white;
         }
+
+        
 
         .back {
             width: 100%;
@@ -108,16 +111,17 @@
             margin-bottom: 10px;
             border-style: none;
             border: 1px solid black;
+            font-family: 'GmarketSansBold';
         }
 
-        .box문의 input {
+        .box문의 textarea {
             width: 500px;
             height: 80px;
             margin-bottom: 10px;
             border-style: none;
             border: 1px solid black;
-            overflow: scroll;
             text-align: start;
+            font-family: 'GmarketSansBold';
         }
 
         .box3 button {
@@ -127,6 +131,7 @@
             color: white;
             background-color: black;
             border-style: none;
+            font-family: 'GmarketSansBold';
         }
 
         .box3 button:hover {
@@ -148,17 +153,60 @@
             margin-bottom: 100px;
         }
 
+        footer {
+            display: block;
+            border: 1px solid black;
+            width: 100%;
+            height: 300px;
+            background-color: black;
+            color: white;
+            margin-top: 1000px;
+        }
+
+        .let {
+            width: 800px;
+            height: 300px;
+            margin: 0;
+        }
+
+        .let ul {
+            text-decoration: none;
+            list-style-type: none;
+            display: block;
+            float: left;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .let li {
+            float: left;
+            padding: 12px;
+            margin-right: 50px;
+            color: white;
+        }
+
+        .let li:hover{
+            color: rgba(128, 128, 128, 0.705);
+        }
+
+        .let p {
+            display: block;
+            float: left;
+            padding: 20px;
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
     <head>
         <nav>
             <ul>
-                <li><img src="./Untitled-111.png" alt="" width="50PX"></li>
-                <li>Store</li>
-                <li>Design</li>
-                <li >Portfolio</li>
-                <li style="color: white;">Ask</li>
+                <a href="http://127.0.0.1:5500/index.html"><li><img src="./Untitled-111.png" alt="" width="50PX"></li></a>
+                <a href="http://127.0.0.1:5500/index.html"><li>Store</li></a>
+                <a href="http://127.0.0.1:5500/index.html"><li>Design</li></a>
+                <a href="http://127.0.0.1:5500/index.html"><li >Portfolio</li></a>
+                <a href="http://127.0.0.1:5500/index1.html"><li style="color: white;"> Ask</li></a>
+                <a href="http://127.0.0.1:5500/index2.html"><li class="right">login</li></a>
             </ul>
         </nav>
 
@@ -187,7 +235,7 @@
         <div class="box2">
             <h3>- Phone Call</h3>
             <h2>전문가와의 통화로</h2>
-            <h2>가장 확실하게 궁금증을 해결하세요</h2>
+            <h2>가장 확실하게 궁금증을 해결하세요.</h2>
             <p>Tel. 010-1234-5678</p>
         </div>
 
@@ -203,9 +251,10 @@
             <p>이메일</p>
             <input type="text" style="background: none;">
             <p>문의 내용</p>
+
             </div>
             <div class="box문의">
-                <input type="text" style="background: none;">
+                <textarea name="문의" style="background: none;"></textarea>
             </div>
             <button type="submit">메일 전송</button>
         </div>
@@ -216,5 +265,20 @@
             <img src="./지도사진.PNG" alt="지도">
         </div>
     </main>
+
+    <footer>
+        <div class="let">
+            <ul>
+                <li>Store</li>
+                <li>Design</li>
+                <li>Portfolio</li>
+                <a href="http://127.0.0.1:5500/index1.html"><li> Ask</li></a>
+                <a href="http://127.0.0.1:5500/index2.html"><li class="right">login</li></a>
+            </ul>
+            <p>이용약관 개인정보처리방침</p>
+            <p>onbrella | 우산 제작 브랜드 Tel. 010-1234-5678 Email. test1@naver.com</p>
+            <p>Address. 부산광역시 진구 중앙대로 123-1번길</p>
+        </div>
+    </footer>
 </body>
 </html>

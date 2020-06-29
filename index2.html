@@ -14,17 +14,92 @@
             padding: 0;
             box-sizing: border-box;
         }
-        header p {
-            font-size: xx-large;
-            margin-top: 50px;
-            margin-left: 100px;
+
+        .header nav {
+            position: fixed;
+            top: 0;
+            display: block;
+            border: 1px solid rgba(182, 172, 165, 0.582);
+            background-color: rgb(182, 172, 165);
+            box-shadow: 1px 2px 3px 1px rgba(71, 68, 67, 0.582);
+            width: 100%;
+            height: 50px;            
+            z-index: 999;
         }
+
+      
+
+        .header nav ul {
+            text-decoration: none;
+            list-style-type: none;
+            letter-spacing: 2px;
+        }
+
+        .header nav li {
+            display: block;
+            float: left;
+            padding: 14px;
+            margin-left: 30px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .header nav li img {
+            position: absolute;
+            top: 0;
+            left: 10px;
+        }
+
+        .header nav li:hover {
+            color: white;
+        }
+
+        .nav::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .on {
+           display: block;
+           position: absolute;
+           top: 80px;
+           left: 200px;
+        }
+
+        .cha {
+            position: fixed;
+            right: 0;
+            bottom: 50px;
+            display: block;
+            float: right;
+        }
+
+        .cha p {
+            border: 1px solid width;
+            background-color: white;
+            box-shadow: 1px 2px 3px 1px rgba(182, 172, 165, 0.582);
+            border-radius: 50px 0px 0px 50px;
+            padding-top: 15px;
+            height: 50px;
+            width: 150px;
+            text-align: center;
+        }
+
+        .cha img {
+            margin-top: 10px;
+            padding-left: 30px;
+        }
+
+      
+        
 
         main {
             margin: 0 auto;
             width: 960px;
         }
         /* float: left; */
+
 
         .lo {
             display: block;
@@ -33,6 +108,7 @@
             left: 600px;
             width: 300px;
             margin-left: 70px;
+            margin-top: 100px;
         }
 
         .lo p {
@@ -49,6 +125,11 @@
             display: block;
         }
 
+        ul input {
+            font-size: medium;
+            border: none;
+            font-family: 'GmarketSansBold';
+        }
         .lo ul li {
             float: left;
             width: 300px;
@@ -60,9 +141,9 @@
 
         
         .lo button {
-            position: fixed;
-            top: 350px;
-            left: 920px;
+            position: absolute;
+            bottom: 30px;
+            left: 250px;
             float: left;
             font-size: xx-large;
             display: block;
@@ -72,6 +153,7 @@
             color: white;
             border-style: none;
             margin-left: 70px;
+            margin-top: 100px;
         }
 
         .lo button:hover {
@@ -86,28 +168,94 @@
             margin-top: 5px;
         }
 
+
         .un p {
             float: left;
             font-size: 17px;
         }
-        
+
+        footer {
+            display: block;
+            border: 1px solid black;
+            width: 100%;
+            height: 300px;
+            background-color: black;
+            color: white;
+            margin-top: 1000px;
+        }
+
+        .let {
+            width: 800px;
+            height: 300px;
+            margin: 0;
+        }
+
+        .let ul {
+            text-decoration: none;
+            list-style-type: none;
+            display: block;
+            float: left;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .let li {
+            float: left;
+            padding: 12px;
+            margin-right: 50px;
+            color: white;
+        }
+
+        .let li:hover{
+            color: rgba(128, 128, 128, 0.705);
+        }
+
+        .let p {
+            display: block;
+            float: left;
+            padding: 20px;
+            margin-left: 10px;
+        }
 
     </style>
 </head>
 <body>
-    <header>
-        <p>onbrella</p>
-    </header>
-   
+    <div class="header">
+    <nav>
+        <ul>
+            <a href="http://127.0.0.1:5500/index.html"><li><img src="./Untitled-111.png" alt="" width="50PX"></li></a>
+            <a href="http://127.0.0.1:5500/index.html"><li>Store</li></a> 
+            <a href="http://127.0.0.1:5500/index.html"><li>Design</li></a> 
+            <a href="http://127.0.0.1:5500/index.html"><li>Portfolio</li></a> 
+            <a href="http://127.0.0.1:5500/index1.html"><li> Ask</li></a>
+            <a href="http://127.0.0.1:5500/index2.html"><li class="right"  style="color: white;">login</li></a>
+        </ul>
+
+        <div class="cha">
+            <div>
+                <p> 1:1 채팅 문의하기</p>
+            </div>
+            <div>
+                <img src="./말풍선색깔-2.png" alt="말풍선">
+            </div>
+            
+        </div>
+    </nav>
+
+        <div class="on">
+        <h1 >onbrella</h1>
+        </div>
+
+    </div>
+       
 
     <main>
+        
         <div class="lo">
             <p>로그인</p>
-            <!-- <input type="text" value="ID" style="border: hidden;"><hr>
-            <input type="text" value="비밀번호" style="border: hidden;" ><hr> -->
             <ul>
-                <li>ID</li>
-                <li>비밀번호 </li>
+                <input type="text" placeholder="ID" size="20"><hr>
+                <input type="text"  placeholder="비밀번호" size="20" ><hr>
             </ul>
             <button> 로그인 </button>
             <div class="un">
@@ -117,5 +265,20 @@
             </div>
         </div>
     </main>
+
+    <footer>
+        <div class="let">
+            <ul>
+                <li>Store</li>
+                <li>Design</li>
+                <li>Portfolio</li>
+                <a href="http://127.0.0.1:5500/index1.html"><li>Ask</li></a>
+                <a href="http://127.0.0.1:5500/index2.html"><li>Login</li></a>
+            </ul>
+            <p>이용약관 개인정보처리방침</p>
+            <p>onbrella | 우산 제작 브랜드 Tel. 010-1234-5678 Email. test1@naver.com</p>
+            <p>Address. 부산광역시 진구 중앙대로 123-1번길</p>
+        </div>
+    </footer>
 </body>
 </html>

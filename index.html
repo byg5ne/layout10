@@ -37,6 +37,8 @@
             float: left;
             padding: 14px;
             margin-left: 30px;
+            text-decoration: none;
+            color: black;
         }
 
         nav li img {
@@ -60,7 +62,8 @@
             left: 50%;
 
             display: inline-block;
-            background-color: purple;
+            background-color: black;
+            /* purple */
             color: white;
             padding: 20px;
             text-align: center;
@@ -97,7 +100,7 @@
 
         main {
             margin: 0 auto;
-            width: 960px;
+            width: 1260px;
             }
 
         .배너 ul {
@@ -106,12 +109,14 @@
         }
 
         .배너 li {
+            float: left ;
             border: 1px solid rgba(167, 164, 164, 0.555);
             text-align: center;
             margin: 59px;
-            display: block;
-            float: left;
+            display: inline-block;
+            overflow: hidden;
         }
+
 
         footer {
             display: block;
@@ -124,7 +129,7 @@
         }
 
         .let {
-            width: 600px;
+            width: 800px;
             height: 300px;
             margin: 0;
         }
@@ -142,6 +147,7 @@
             float: left;
             padding: 12px;
             margin-right: 50px;
+            color: white;
         }
 
         .let li:hover{
@@ -154,6 +160,97 @@
             padding: 20px;
             margin-left: 10px;
         }
+
+        #bea1 {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        background-image: url("18930093-4N5-20180330112435204.jpg") ;
+        background-size: 100%;
+        /* background-position-x: center; */
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+         #bea1:hover {
+        background-image: url("18930093-4N5_1-20180330112435235.jpg") ;
+        color: wheat;
+    }
+
+    #bea2 {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        background-image: url("18921065-30K9-20170222114915640.jpg") ;
+        background-size: 100%;
+        /* background-position-x: center; */
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+         #bea2:hover {
+        background-image: url("18921065-30K9_1-20170222114915687.jpg") ;
+        color: wheat;
+    }
+
+    #bea3 {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        background-image: url("222Plat-300T8-20170508175255399.jpg") ;
+        background-size: 100%;
+        /* background-position-x: center; */
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+         #bea3:hover {
+        background-image: url("222Plat-300T8_1-20170508175255461.jpg") ;
+        color: wheat;
+    }
+
+    #bea4 {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        background-image: url("61iWWzOPTKL._AC_SX522_.jpg") ;
+        background-size: 100%;
+        /* background-position-x: center; */
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+         #bea4:hover {
+        background-image: url("61LYL7KJiIL._AC_SL1500_.jpg") ;
+        color: wheat;
+        
+    }
+
+    #bea5 {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        background-image: url("61tHZFvWYPL._AC_SX425_.jpg") ;
+        background-size: 100%;
+        /* background-position-x: center; */
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+         #bea5:hover {
+        background-image: url("41uEZdIb-AL._AC_.jpg") ;
+        color: wheat;
+    }
+
+    #bea6 {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        background-image: url("611v-MQjP9L._AC_SL1200_.jpg") ;
+        background-size: 100%;
+        /* background-position-x: center; */
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+         #bea6:hover {
+        background-image: url("61o4tL1lYKL._AC_SL1200_.jpg") ;
+        color: wheat;
+    }
     </style>
 
 
@@ -163,16 +260,17 @@
     <head>
         <nav>
             <ul>
-                <li><img src="./Untitled-111.png" alt="" width="50PX"></li>
-                <li>Store</li>
-                <li>Design</li>
-                <li>Portfolio</li>
-                <li>Ask</li>
+                <a href="http://127.0.0.1:5500/index.html"><li><img src="./Untitled-111.png" alt="" width="50PX"></li></a>
+                <a href="http://127.0.0.1:5500/index.html"><li>Store</li></a>
+                <a href="http://127.0.0.1:5500/index.html"><li>Design</li></a>
+                <a href="http://127.0.0.1:5500/index.html"><li>Portfolio</li></a>
+                <a href="http://127.0.0.1:5500/index1.html"><li> Ask</li></a>
+                <a href="http://127.0.0.1:5500/index2.html"><li class="right">login</li></a>
             </ul>
         </nav>
 
         <div class="back">
-            <img src="./umbrella_CreamWhite_web_1024x1440_1-min_2000x.jpg" alt="" width="100%\" height="100%" >
+            <img src="./CRAFTSMANSHIP2.jpg" alt="" width="100%\" height="100%" >
             
         </div>
 
@@ -191,18 +289,19 @@
         </div>
     </head>
 
+   
     <main>
         <div class="배너">
             <ul>
-                <li><img src="./Artisanal-umbrellas-2.jpg" alt="" width="200px"></li>
-                <li><img src="./Artisanal-umbrellas-1.jpg" alt="" width="200px"></li>
-                <li><img src="./Artisanal-umbrellas.jpg" alt="" width="200px"></li>
+                <li id="bea1"><p>프린트 제작</p></li>
+                <li id="bea2"><p>프린트 제작</p></li>
+                <li id="bea3"><p>프린트 제작</p></li>
             </ul>
 
             <ul>
-                <li><img src="./61iWWzOPTKL._AC_SX522_.jpg" alt="" width="200px"></li>
-                <li><img src="./61tHZFvWYPL._AC_SX425_.jpg" alt="" width="200px"></li>
-                <li><img src="./32b9ca8ea4b9ccc76a2a864988710846--umbrellas-rain.jpg" alt="" width="200px" height="200px"></li>
+                <li id="bea4"><p>실용우산 제작</p></li>
+                <li id="bea5"><p>실용우산 제작</p></li>
+                <li id="bea6"><p>실용우산 제작</p></li>
             </ul>
         </div>
     </main>
@@ -213,7 +312,8 @@
                 <li>Store</li>
                 <li>Design</li>
                 <li>Portfolio</li>
-                <li>Ask</li>
+                <a href="http://127.0.0.1:5500/index1.html"><li> Ask</li></a>
+                <a href="http://127.0.0.1:5500/index2.html"><li class="right">login</li></a>
             </ul>
             <p>이용약관 개인정보처리방침</p>
             <p>onbrella | 우산 제작 브랜드 Tel. 010-1234-5678 Email. test1@naver.com</p>
